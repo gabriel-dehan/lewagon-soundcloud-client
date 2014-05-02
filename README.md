@@ -14,12 +14,14 @@ Maybe you could do even better ?
 
 ## How to ?
 
-**Don't put your code in the lib/ directory, he is there for external libraries, like, well, this :**
+**Don't put your code in the lib/ directory, he is there for external libraries.**
 
 For the purpose of this exercices, I created a small library, that lives in the `lib/` directory.
 Here is how to require it :
 
-`require_relative 'lib/stream.rb`
+```ruby
+require_relative 'lib/stream.rb'
+```
 
 This library provides three things :
 
@@ -83,13 +85,14 @@ file3 = streamer.load "myOtherMusicFile3"
 
 ## Tips & Resources
 - To retrieve playlists, sounds, users, track names and so on you will need to access the soundcloud API :
-  - Go to https://developers.soundcloud.com/ and create an account and register a new application
+  - Go to https://developers.soundcloud.com/, create an account and register a new application
   - Use the Ruby Soundcloud API Wrapper : https://github.com/soundcloud/soundcloud-ruby, it's really easy
 
 - To get the the stream_url for a sound, you will need the soundcloud API for tracks : https://developers.soundcloud.com/docs/api/reference#tracks, it's really easy to get tracks with the soundcloud-ruby wrapper.
 
 - You will want to play sounds ! To play sounds you will need the `audite` gem.
    - https://github.com/georgi/audite
+   - READ THE DOCUMENTATION, AND READ THE CODE (you will learn how to pause the music, rewind it, go forward...)
    - Theres is a good example here : https://github.com/georgi/audite/blob/master/bin/audite
    - But you might want a simplier example :
 ```ruby

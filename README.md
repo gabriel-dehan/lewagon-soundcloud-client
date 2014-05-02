@@ -116,3 +116,19 @@ player.thread.join
 ```
 
 - Final tip : the code in `lib/stream` is documented, thus, if you want to read it you can.
+
+# Dependencies
+
+### Mac OS X :
+
+```bash
+$ brew install portaudio
+$ brew install mpg123
+```
+
+### Ubuntu :
+
+```bash
+$ [sudo] apt-get install libjack0 libjack-dev
+$ [sudo] apt-get install libportaudiocpp0 portaudio19-dev libmpg123-dev
+```

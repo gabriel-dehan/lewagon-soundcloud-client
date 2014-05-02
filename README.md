@@ -14,9 +14,9 @@ Maybe you could do even better ?
 
 ## How to ?
 
-**Don't put your code in the lib/ directory, he is there for external libraries.**
+**Don't put your code in the lib/ directory, it is there for external libraries.**
 
-For the purpose of this exercices, I created a small library, that lives in the `lib/` directory.
+For the purpose of this exercice, I created a small library, that lives in the `lib/` directory.
 Here is how to require it :
 
 ```ruby
@@ -58,7 +58,7 @@ Example 2 : Get sounds and stores them in a directory
 ```ruby
 
 # The path variables is the directory in which you want to download your soundcloud files
-streamer = Stream::Client.new(client_id: @client_id, path: 'downloads')
+streamer = Stream::Client.new(client_id: SOUNDCLOUD_CLIENT_ID, path: 'downloads')
 
 streamer.resolve("https://api.soundcloud.com/tracks/147462663/stream")
 file = streamer.load "myMusicFile" do |length, position, chunk|
